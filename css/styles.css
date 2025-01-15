@@ -1,0 +1,192 @@
+.banner {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.products .card {
+  transition: transform 0.3s ease;
+}
+.products .card:hover {
+  transform: translateY(-10px);
+}
+.testimonials .carousel-item {
+  text-align: center;
+}
+
+.bg-orange {
+  background-color: #ff6600;
+  height: 172px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+}
+
+.bg-orange .container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  height: 100%; /* Take full height */
+}
+
+.bg-orange .row {
+  width: 100%; /* Ensure row takes full width */
+  justify-content: space-between; /* Add equal spacing between columns */
+}
+
+.bg-orange .bg-dark {
+  margin-top: auto;
+}
+
+.text-orange {
+  color: #ff6600;
+}
+
+.logo {
+  width: 147px;
+  height: 49px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff6600;
+}
+.input-group {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 50px;
+  width: 750px;
+}
+
+.input-group .form-control {
+  border-radius: 8px 0 0 8px;
+  border: none;
+}
+
+.input-group .btn {
+  border-radius: 0 8px 8px 0;
+  border: none;
+}
+
+.input-group button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.input-group button img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.header-icons a {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.header-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.header-icons i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.header-icons .cart-icon {
+  padding: 8px;
+}
+
+.cart-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.cart-icon i {
+  margin: 0; /* Override previous margin */
+  font-size: 18px; /* Adjust icon size */
+}
+
+.cart-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Keep all existing styles above, then add: */
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .input-group {
+    width: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bg-orange {
+    height: auto;
+    min-height: 172px;
+    padding: 20px 0;
+  }
+
+  .input-group {
+    width: 450px;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-orange .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bg-orange .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .col-auto {
+    margin: 10px 0;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg-orange {
+    padding: 15px 0;
+  }
+
+  .input-group {
+    height: 40px;
+  }
+
+  .input-group button img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
