@@ -109,46 +109,246 @@
         </nav>
       </div>
     </header>
+    <section class="carousel-banner">
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
 
-    <!-- Banner -->
-    <section
-      class="banner text-center py-5"
-      style="
-        background: url('assets/images/banner.jpg') no-repeat center
-          center/cover;
-      "
-    >
-      <div class="container text-white">
-        <h1>Flash Sale Mùa Vu Lan</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <a href="#" class="btn btn-danger">Khám Phá Thêm</a>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/banner/banner1.png"
+              class="d-block"
+              alt="Banner 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/banner/banner1.png"
+              class="d-block"
+              alt="Banner 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/banner/banner1.png"
+              class="d-block"
+              alt="Banner 3"
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products py-5">
-      <div class="container">
-        <div class="row">
-          <!-- Product Card -->
+    <!-- Banner -->
+    <section
+      class="sales-banner"
+      style="
+        background: url('assets/images/sales/Sales.png') no-repeat center
+          center/cover;
+      "
+    >
+      <div class="sales-top">
+        <div class="row g-0 mt-10">
+          <div class="col-md-8 p-4">
+            <h2 class="sales-title">Flash Sale Mùa Vu lan</h2>
+            <p class="sales-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              lobortis sed sapien in pretium. Donec tincidunt, quam.
+            </p>
+          </div>
           <div class="col-md-4">
-            <div class="card">
-              <img
-                src="assets/images/product1.jpg"
-                class="card-img-top"
-                alt="Product 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Ghế Massage ABCSport A35</h5>
-                <p class="card-text">12.900.000đ</p>
-                <a href="#" class="btn btn-primary">Mua Ngay</a>
+            <img src="assets/images/sales/Logo1.png" alt="Sales Top" />
+          </div>
+        </div>
+      </div>
+      <div class="sales-bottom">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/images/sales/product1.png"
+                    alt="Product 1"
+                    class="img-fluid"
+                  />
+                  <div class="discount-badge">-50%</div>
+                </div>
+                <div class="product-info">
+                  <h3>Ghế Massage ABC</h3>
+                  <div class="price">
+                    <span class="current-price">15.000.000₫</span>
+                    <span class="original-price">30.000.000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-3">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/images/sales/product2.png"
+                    alt="Product 2"
+                    class="img-fluid"
+                  />
+                  <div class="discount-badge">-50%</div>
+                </div>
+                <div class="product-info">
+                  <h3>Ghế Massage ABC</h3>
+                  <div class="price">
+                    <span class="current-price">15.000.000₫</span>
+                    <span class="original-price">30.000.000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-3">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/images/sales/product3.png"
+                    alt="Product 3"
+                    class="img-fluid"
+                  />
+                  <div class="discount-badge">-50%</div>
+                </div>
+                <div class="product-info">
+                  <h3>Ghế Massage ABC</h3>
+                  <div class="price">
+                    <span class="current-price">15.000.000₫</span>
+                    <span class="original-price">30.000.000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-3">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/images/sales/product4.png"
+                    alt="Product 4"
+                    class="img-fluid"
+                  />
+                  <div class="discount-badge">-50%</div>
+                </div>
+                <div class="product-info">
+                  <h3>Ghế Massage ABC</h3>
+                  <div class="price">
+                    <span class="current-price">15.000.000₫</span>
+                    <span class="original-price">30.000.000₫</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <!-- Repeat for other products -->
         </div>
       </div>
     </section>
 
+    <section class="product-categories py-5">
+      <div class="container">
+        <div class="text-center title-with-icon">
+          <img
+            src="assets/images/products/huychuong.png"
+            alt="Medal"
+            class="category-icon"
+          />
+          <h2 class="mb-5 d-inline-block">Danh Mục Sản Phẩm</h2>
+        </div>
+        <div class="row g-4">
+          <!-- Category 1 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="category-card">
+              <img
+                src="assets/images/products/p2.png"
+                alt="Ghế Massage"
+                class="img-fluid"
+              />
+              <div class="category-overlay">
+                <h3>Ghế Massage</h3>
+                <p>10 sản phẩm</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="category-card">
+              <img
+                src="assets/images/products/p3.png"
+                alt="Máy Chạy Bộ"
+                class="img-fluid"
+              />
+              <div class="category-overlay">
+                <h3>Máy Chạy Bộ</h3>
+                <p>10 sản phẩm</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="category-card">
+              <img
+                src="assets/images/products/p4.png"
+                alt="Xe Đạp"
+                class="img-fluid"
+              />
+              <div class="category-overlay">
+                <h3>Xe Đạp</h3>
+                <p>10 sản phẩm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-outline-dark view-more-btn">
+            Xem thêm <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
     <!-- Testimonials -->
     <section class="testimonials py-5 bg-light">
       <div class="container">
@@ -187,14 +387,152 @@
         </div>
       </div>
     </section>
+    <section class="news-events-section">
+      <div class="container">
+        <div
+          class="d-flex justify-content-between align-items-center mb-4"
+        ></div>
+        <h2 class="text-center mb-5">Tin Tức & Sự Kiện</h2>
+        <div class="scroll-container position-relative">
+          <button class="scroll-btn scroll-left">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <div class="scroll-content">
+            <!-- Repeat these items -->
+            <div class="news-item">
+              <img src="assets/images/event/event1.png" alt="News 1" />
+              <h3>This is card heading</h3>
+              <p>28 Aug,2023 19:55</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="news-item">
+              <img src="assets/images/event/event2.png" alt="News 2" />
+              <h3>This is card heading</h3>
+              <p>28 Aug,2023 19:55</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="news-item">
+              <img src="assets/images/event/event3.png" alt="News 2" />
+              <h3>This is card heading</h3>
+              <p>28 Aug,2023 19:55</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="news-item">
+              <img src="assets/images/event/event4.png" alt="News 2" />
+              <h3>This is card heading</h3>
+              <p>28 Aug,2023 19:55</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <button class="scroll-btn scroll-right">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-outline-dark view-more-btn">
+            Xem thêm <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="banner-section">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <!-- Left section (1/3) -->
+          <div class="col-md-4">
+            <img src="assets/images/section3/ghe.png" alt="Left Banner" />
+          </div>
+          <!-- Right section (2/3) -->
+          <div class="col-md-8">
+            <!-- Top part -->
+            <div class="top-content d-flex">
+              <div class="image-part w-25">
+                <img src="assets/images/section3/robot.png" alt="Top Banner" />
+              </div>
+              <div class="text-part w-75 d-flex align-items-center ps-4">
+                <h2 class="text-white fw-bolder">
+                  ABCSport luôn sẵn sàng<br />đồng hành cùng bạn
+                </h2>
+              </div>
+            </div>
 
+            <!-- Bottom part with inputs -->
+            <div class="bottom-content px-4">
+              <div class="d-flex gap-5 justify-content-center">
+                <div class="">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="Email của bạn"
+                  />
+                </div>
+                <div class="position-relative">
+                  <input
+                    type="tel"
+                    class="form-control form-control-lg pe-5"
+                    placeholder="Số điện thoại"
+                  />
+                  <button class="btn btn-consult position-absolute">
+                    Tư vấn <i class="bi bi-arrow-right ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="py-4 bg-dark text-white">
       <div class="container">
         <div class="row">
           <!-- Left column (1/3) -->
           <div class="col-md-4">
-            <h5>Về ABC Sport</h5>
-            <p>&copy; 2023 ABCSport. All rights reserved.</p>
+            <img
+              src="assets/images/footer/logo.png"
+              alt="ABC Sport Logo"
+              class="logo mb-3"
+            />
+            <h5>CÔNG TY TNHH ABC SPORT</h5>
+            <ul class="list-unstyled">
+              <li>Giấy CNĐKDN: 0316165103</li>
+              <li>Ngày cấp: 26-02-2020</li>
+              <li>Cấp bởi: Sở Kế hoạch và Đầu tư TP. HCM.</li>
+              <li>
+                Địa chỉ ĐKKD: Số 8, đường Phú Mỹ 2B, Khu Mỹ Phú 2-S10, KP6,
+                P.Tân Phú, Quận 7
+              </li>
+              <li>
+                Email:
+                <a href="mailto:abcsportvietnam@gmail.com" class="text-white"
+                  >abcsportvietnam@gmail.com</a
+                >
+              </li>
+            </ul>
+
+            <!-- Social Media Icons -->
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="social-icons">
+                <a href="tel:+84123456789" class="text-white me-3">
+                  <i class="bi bi-telephone-fill"></i>
+                </a>
+                <a href="#" class="text-white me-3">
+                  <i class="bi bi-youtube"></i>
+                </a>
+                <a href="#" class="text-white me-3">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="text-white me-3">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+              <div class="govt-cert">
+                <img
+                  src="assets/images/footer/bo-cong-thuong.png"
+                  alt="Bộ Công Thương"
+                  height="40"
+                />
+              </div>
+            </div>
           </div>
 
           <!-- Right column (2/3) -->
@@ -202,7 +540,7 @@
             <div class="row">
               <div class="col-md-4">
                 <h5>Về Chúng Tôi</h5>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled footer-links">
                   <li><a href="#" class="text-white">Giới thiệu</a></li>
                   <li><a href="#" class="text-white">Liên hệ</a></li>
                   <li><a href="#" class="text-white">Tuyển dụng</a></li>
@@ -211,7 +549,7 @@
               </div>
               <div class="col-md-4">
                 <h5>Hướng Dẫn</h5>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled footer-links">
                   <li><a href="#" class="text-white">Hướng dẫn mua hàng</a></li>
                   <li>
                     <a href="#" class="text-white">Chính sách bảo hành</a>
@@ -226,7 +564,7 @@
               </div>
               <div class="col-md-4">
                 <h5>Xem Thêm</h5>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled footer-links">
                   <li><a href="#" class="text-white">Tin tức</a></li>
                   <li><a href="#" class="text-white">Khuyến mãi</a></li>
                   <li><a href="#" class="text-white">Chính sách bảo mật</a></li>
@@ -235,6 +573,12 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr class="mt-4 mb-3" />
+        <div class="text-center">
+          <small>© 2023 ABCSport. All rights reserved.</small>
         </div>
       </div>
     </footer>
